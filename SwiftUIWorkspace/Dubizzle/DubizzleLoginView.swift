@@ -10,7 +10,7 @@ import SwiftUI
 struct DubizzleLoginView: View {
     
     var body: some View {
-        VStack {
+        NavigationStack {
             loginTopView()
             loginMethodsView()
             registerView()
@@ -104,14 +104,21 @@ extension DubizzleLoginView {
     
     private func registerView() -> some View {
         return VStack {
-            Button {
-                
-            } label: {
+            NavigationLink(destination: DubizzleRegisterView()) {
                 Text("Dont't have an account? Create one")
                     .foregroundColor(.red)
                     .bold()
             }
             .padding()
+            
+//            Button {
+//                
+//            } label: {
+//                Text("Dont't have an account? Create one")
+//                    .foregroundColor(.red)
+//                    .bold()
+//            }
+//            .padding()
             
             HStack {
                 Text("By logging in I agree to the")
