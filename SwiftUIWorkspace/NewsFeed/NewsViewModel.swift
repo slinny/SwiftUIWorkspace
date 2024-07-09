@@ -32,15 +32,5 @@ class NewsViewModel: ObservableObject {
             print(URLError.cannotDecodeRawData)
         }
     }
-    
-    func fetchArticleImages(from urlString: String) async {
-        guard let data = await apiManager.fetchData(from: urlString) else {
-            print(URLError.badServerResponse)
-            return
-        }
-        DispatchQueue.main.async {
-            self.images[urlString] = UIImage(data: data)
-        }
-    }
 }
 

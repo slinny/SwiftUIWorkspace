@@ -18,25 +18,15 @@ struct NewsListView: View {
                     let article = viewModel.articles[index]
                     HStack {
                         if let imageURL = article.urlToImage {
-                            if let image = viewModel.images[imageURL] {
-                                Image(uiImage: image)
-                                    .resizable()
-                                    .frame(width: 50, height: 50)
-                                    .padding(10)
-                            } else {
-                                ProgressView()
-                                    .frame(width: 50, height: 50)
-                                    .padding(10)
-                                    .onAppear {
-                                        Task {
-                                            await viewModel.fetchArticleImages(from: imageURL)
-                                        }
-                                    }
-                            }
+                            AsyncImage(urlString: imageURL)
+                                .frame(width: 50, height: 50)
+                                .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+                                .padding(10)
                         } else {
-                            Image(systemName: "book")
+                            Image(systemName: "")
                                 .resizable()
                                 .frame(width: 50, height: 50)
+                                .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
                                 .padding(10)
                         }
                         VStack(alignment: .leading) {

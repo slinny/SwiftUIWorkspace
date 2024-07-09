@@ -9,7 +9,10 @@ import SwiftUI
 
 struct AsyncImageView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        AsyncImage(urlString: "")
+            .frame(width: 50, height: 50)
+            .border(Color.gray, width: /*@START_MENU_TOKEN@*/1/*@END_MENU_TOKEN@*/)
+            .padding(10)
     }
 }
 

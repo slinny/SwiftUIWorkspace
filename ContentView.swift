@@ -14,10 +14,10 @@ import SwiftUI
 struct ContentView: View {
     
     var body: some View {
-        DubizzleLoginView()
+        NewsListView()
     }
 }
 
 #Preview {
-    DubizzleLoginView()
+    NewsListView()
 }
