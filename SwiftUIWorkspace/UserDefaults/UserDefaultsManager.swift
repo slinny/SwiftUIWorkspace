@@ -8,18 +8,20 @@
 import Foundation
 
 /*
- // Setting values
- UserDefaultsManager.shared.username = "JohnDoe"
- UserDefaultsManager.shared.isLoggedIn = true
- UserDefaultsManager.shared.preferredTheme = .dark
+ // Setting values with custom keys
+ UserDefaultsManager.shared.setUsername("JohnDoe", forKey: "customUsernameKey")
+ UserDefaultsManager.shared.setIsLoggedIn(true, forKey: "customIsLoggedInKey")
+ UserDefaultsManager.shared.setPreferredTheme(.dark, forKey: "customPreferredThemeKey")
 
- // Getting values
- let username = UserDefaultsManager.shared.username
- let isLoggedIn = UserDefaultsManager.shared.isLoggedIn
- let preferredTheme = UserDefaultsManager.shared.preferredTheme
+ // Getting values with custom keys
+ let username = UserDefaultsManager.shared.getUsername(forKey: "customUsernameKey")
+ let isLoggedIn = UserDefaultsManager.shared.getIsLoggedIn(forKey: "customIsLoggedInKey")
+ let preferredTheme = UserDefaultsManager.shared.getPreferredTheme(forKey: "customPreferredThemeKey")
 
- // Clearing user data
- UserDefaultsManager.shared.clearUserData()
+ // Clearing data for specific keys
+ UserDefaultsManager.shared.clearData(forKey: "customUsernameKey")
+ UserDefaultsManager.shared.clearData(forKey: "customIsLoggedInKey")
+ UserDefaultsManager.shared.clearData(forKey: "customPreferredThemeKey")
  */
 
 class UserDefaultsManager {
@@ -27,49 +29,37 @@ class UserDefaultsManager {
     
     private let userDefaults = UserDefaults.standard
     
-    // Keys
-    private struct Keys {
-        static let username = "username"
-        static let isLoggedIn = "isLoggedIn"
-        static let preferredTheme = "preferredTheme"
+    // User properties with custom keys
+    func setUsername(_ username: String?, forKey key: String) {
+        userDefaults.setValue(username, forKey: key)
     }
     
-    // User properties
-    var username: String? {
-        get {
-            return userDefaults.string(forKey: Keys.username)
-        }
-        set {
-            userDefaults.setValue(newValue, forKey: Keys.username)
-        }
+    func getUsername(forKey key: String) -> String? {
+        return userDefaults.string(forKey: key)
     }
     
-    var isLoggedIn: Bool {
-        get {
-            return userDefaults.bool(forKey: Keys.isLoggedIn)
-        }
-        set {
-            userDefaults.setValue(newValue, forKey: Keys.isLoggedIn)
-        }
+    func setIsLoggedIn(_ isLoggedIn: Bool, forKey key: String) {
+        userDefaults.setValue(isLoggedIn, forKey: key)
     }
     
-    var preferredTheme: Theme {
-        get {
-            if let savedTheme = userDefaults.string(forKey: Keys.preferredTheme) {
-                return Theme(rawValue: savedTheme) ?? .light
-            }
-            return .light
-        }
-        set {
-            userDefaults.setValue(newValue.rawValue, forKey: Keys.preferredTheme)
-        }
+    func getIsLoggedIn(forKey key: String) -> Bool {
+        return userDefaults.bool(forKey: key)
     }
     
-    // Clear all user data
-    func clearUserData() {
-        userDefaults.removeObject(forKey: Keys.username)
-        userDefaults.removeObject(forKey: Keys.isLoggedIn)
-        userDefaults.removeObject(forKey: Keys.preferredTheme)
+    func setPreferredTheme(_ theme: Theme, forKey key: String) {
+        userDefaults.setValue(theme.rawValue, forKey: key)
+    }
+    
+    func getPreferredTheme(forKey key: String) -> Theme {
+        if let savedTheme = userDefaults.string(forKey: key) {
+            return Theme(rawValue: savedTheme) ?? .light
+        }
+        return .light
+    }
+    
+    // Clear data for a specific key
+    func clearData(forKey key: String) {
+        userDefaults.removeObject(forKey: key)
     }
 }
 
@@ -78,4 +68,5 @@ enum Theme: String {
     case light
     case dark
 }
+
 
