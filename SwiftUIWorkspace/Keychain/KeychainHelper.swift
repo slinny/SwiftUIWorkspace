@@ -5,29 +5,6 @@
 //  Created by Siran Li on 7/9/24.
 //
 
-/*
- https://www.youtube.com/watch?v=NCREPNvFpjk
- 
- MARK: Saving Data
- if let data = "mySensitiveData".data(using: .utf8) {
-     let success = KeychainHelper.shared.save(data, for: "com.myapp.service", account: "userAccount")
-     print("Save successful: \(success)")
- }
-
- MARK: Retriving Data
- if let retrievedData = KeychainHelper.shared.retrieve(service: "com.myapp.service", account: "userAccount"),
-    let dataString = String(data: retrievedData, encoding: .utf8) {
-     print("Retrieved data: \(dataString)")
- } else {
-     print("No data found")
- }
-
- MARK: Deleting Data
- let success = KeychainHelper.shared.delete(service: "com.myapp.service", account: "userAccount")
- print("Delete successful: \(success)")
- 
- */
-
 import Foundation
 import Security
 
@@ -81,3 +58,26 @@ class KeychainHelper {
         return status == errSecSuccess
     }
 }
+
+/*
+ https://www.youtube.com/watch?v=NCREPNvFpjk
+ 
+ MARK: Saving Data
+ if let data = "mySensitiveData".data(using: .utf8) {
+     let success = KeychainHelper.shared.save(data, for: "com.myapp.service", account: "userAccount")
+     print("Save successful: \(success)")
+ }
+
+ MARK: Retriving Data
+ if let retrievedData = KeychainHelper.shared.retrieve(service: "com.myapp.service", account: "userAccount"),
+    let dataString = String(data: retrievedData, encoding: .utf8) {
+     print("Retrieved data: \(dataString)")
+ } else {
+     print("No data found")
+ }
+
+ MARK: Deleting Data
+ let success = KeychainHelper.shared.delete(service: "com.myapp.service", account: "userAccount")
+ print("Delete successful: \(success)")
+ 
+ */
