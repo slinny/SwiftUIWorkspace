@@ -25,9 +25,7 @@ class NewsViewModel: ObservableObject {
         
         do {
             let decodedResponse = try JSONDecoder().decode(Articles.self, from: data)
-            DispatchQueue.main.async {
-                self.articles = decodedResponse.articles
-            }
+            self.articles = decodedResponse.articles
         } catch {
             print(URLError.cannotDecodeRawData)
         }

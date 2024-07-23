@@ -50,10 +50,8 @@ struct NewsListView: View {
             }
             .padding()
         }
-        .onAppear{
-            Task {
-                await viewModel.fetchArticles(from: NewsConstants.articleUrl.rawValue)
-            }
+        .task {
+            await viewModel.fetchArticles(from: NewsConstants.articleUrl.rawValue)
         }
     }
 }
