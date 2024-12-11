@@ -15,6 +15,7 @@
 		932EE2272C4C1A50007B73B8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932EE2262C4C1A50007B73B8 /* Common.swift */; };
 		933366E62C45C8E600EAC4B8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E52C45C8E600EAC4B8 /* UserDefaultsManager.swift */; };
 		933366E92C45CA4B00EAC4B8 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E82C45CA4B00EAC4B8 /* CoreData.swift */; };
+		933D73FB2D09CC1F00F6B303 /* CGRectContainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D73FA2D09CC1F00F6B303 /* CGRectContainsView.swift */; };
 		934A9E672C35C542004F3581 /* ItunesHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E662C35C542004F3581 /* ItunesHomeView.swift */; };
 		934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E682C35C585004F3581 /* ItunesViewModel.swift */; };
 		9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */; };
@@ -83,6 +84,7 @@
 		932EE2262C4C1A50007B73B8 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		933366E52C45C8E600EAC4B8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		933366E82C45CA4B00EAC4B8 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
+		933D73FA2D09CC1F00F6B303 /* CGRectContainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectContainsView.swift; sourceTree = "<group>"; };
 		934A9E662C35C542004F3581 /* ItunesHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesHomeView.swift; sourceTree = "<group>"; };
 		934A9E682C35C585004F3581 /* ItunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesViewModel.swift; sourceTree = "<group>"; };
 		9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
@@ -191,6 +193,14 @@
 				933366E82C45CA4B00EAC4B8 /* CoreData.swift */,
 			);
 			path = CoreData;
+			sourceTree = "<group>";
+		};
+		933D73F92D09CBED00F6B303 /* MetaCGRectContains */ = {
+			isa = PBXGroup;
+			children = (
+				933D73FA2D09CC1F00F6B303 /* CGRectContainsView.swift */,
+			);
+			path = MetaCGRectContains;
 			sourceTree = "<group>";
 		};
 		934A9E612C35C4F4004F3581 /* Combine */ = {
@@ -413,6 +423,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				933D73F92D09CBED00F6B303 /* MetaCGRectContains */,
 				930547EA2D093211009388C1 /* PickName */,
 				9368E1242D07F133006B7AD0 /* PushNotification */,
 				9399EF812C49DD3F00408D40 /* PostAPI */,
@@ -605,6 +616,7 @@
 				93042C642C3626B100DECA12 /* Artists.swift in Sources */,
 				93926F422C2F6C2900DB3D4E /* ItemViewModel.swift in Sources */,
 				934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */,
+				933D73FB2D09CC1F00F6B303 /* CGRectContainsView.swift in Sources */,
 				9389909B2C3D0CCF00DC2356 /* Extensions.swift in Sources */,
 				93E188802C34CA92001E4137 /* SegmentView.swift in Sources */,
 				93F14DE22C4178360006C692 /* NSOperationQueue.swift in Sources */,
