@@ -6,13 +6,12 @@
 //
 
 /*
- Problem :- create a dummy model and show that data on a table view in swift ui and create a expandable and collapsing table view 
+ Problem :- create a dummy model and show that data on a table view in swift ui and create a expandable and collapsing table view
  */
 
 import SwiftUI
 
 struct ContentView: View {
-    
     var body: some View {
         NewsListView()
     }

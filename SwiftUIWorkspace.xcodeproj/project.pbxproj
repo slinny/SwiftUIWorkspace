@@ -16,6 +16,7 @@
 		933366E92C45CA4B00EAC4B8 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E82C45CA4B00EAC4B8 /* CoreData.swift */; };
 		934A9E672C35C542004F3581 /* ItunesHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E662C35C542004F3581 /* ItunesHomeView.swift */; };
 		934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E682C35C585004F3581 /* ItunesViewModel.swift */; };
+		9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */; };
 		937C67482C3C3E3B0046A5F2 /* MusicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C67472C3C3E3B0046A5F2 /* MusicListView.swift */; };
 		937C674B2C3C44BA0046A5F2 /* DubizzleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C674A2C3C44BA0046A5F2 /* DubizzleHomeView.swift */; };
 		937C674D2C3C45070046A5F2 /* DubizzleHomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C674C2C3C45070046A5F2 /* DubizzleHomeTabView.swift */; };
@@ -82,6 +83,7 @@
 		933366E82C45CA4B00EAC4B8 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		934A9E662C35C542004F3581 /* ItunesHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesHomeView.swift; sourceTree = "<group>"; };
 		934A9E682C35C585004F3581 /* ItunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesViewModel.swift; sourceTree = "<group>"; };
+		9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
 		937C67472C3C3E3B0046A5F2 /* MusicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListView.swift; sourceTree = "<group>"; };
 		937C674A2C3C44BA0046A5F2 /* DubizzleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleHomeView.swift; sourceTree = "<group>"; };
 		937C674C2C3C45070046A5F2 /* DubizzleHomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleHomeTabView.swift; sourceTree = "<group>"; };
@@ -216,6 +218,14 @@
 				93042C5B2C3623B400DECA12 /* Constants.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		9368E1242D07F133006B7AD0 /* PushNotification */ = {
+			isa = PBXGroup;
+			children = (
+				9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */,
+			);
+			path = PushNotification;
 			sourceTree = "<group>";
 		};
 		937C67462C3C3D960046A5F2 /* Music */ = {
@@ -393,6 +403,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				9368E1242D07F133006B7AD0 /* PushNotification */,
 				9399EF812C49DD3F00408D40 /* PostAPI */,
 				933366E72C45CA3D00EAC4B8 /* CoreData */,
 				933366E42C45C89900EAC4B8 /* UserDefaults */,
@@ -573,6 +584,7 @@
 				93F0C4152C2DF258009907D0 /* SwiftUIWorkspaceApp.swift in Sources */,
 				939363662C3D81A000FEAD28 /* NewsListView.swift in Sources */,
 				933366E62C45C8E600EAC4B8 /* UserDefaultsManager.swift in Sources */,
+				9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */,
 				93987CE02C480C5B005ECAB8 /* KeychainLoginView.swift in Sources */,
 				9399EF8D2C49E46300408D40 /* PostJsonParser.swift in Sources */,
 				93EA68B92C34433E00D53BEE /* SelectListView.swift in Sources */,
