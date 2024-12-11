@@ -58,17 +58,17 @@ class NotificationManager {
             trigger: triggerTime
         )
         
-        let requestDate = UNNotificationRequest(
-            identifier: UUID().uuidString,
-            content: content,
-            trigger: triggerDate
-        )
-        
-        let requestLocation = UNNotificationRequest(
-            identifier: UUID().uuidString,
-            content: content,
-            trigger: locationTrigger
-        )
+//        let requestDate = UNNotificationRequest(
+//            identifier: UUID().uuidString,
+//            content: content,
+//            trigger: triggerDate
+//        )
+//        
+//        let requestLocation = UNNotificationRequest(
+//            identifier: UUID().uuidString,
+//            content: content,
+//            trigger: locationTrigger
+//        )
         
         
         // two cannot be used at the same time becasue they use the same content, if try to add both of them, need two content
