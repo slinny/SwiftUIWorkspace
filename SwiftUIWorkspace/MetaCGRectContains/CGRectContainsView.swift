@@ -13,6 +13,12 @@ struct CGRectContainsView: View {
         let rect2 = CGRect(x: 10, y: 10, width: 50, height: 50)
         let rect3 = CGRect(x: 150, y: 150, width: 50, height: 50)
         
+        if CGRectContainsRect(rect1, rect2) {
+            print("Rect1 contains Rect2")
+        } else {
+            print("Rect1 does not contain Rect2")
+        }
+        
         print(rect1.contains(rect2)) // true
         print(rect1.contains(rect3)) // false
         
