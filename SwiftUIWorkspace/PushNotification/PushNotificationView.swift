@@ -32,25 +32,25 @@ class NotificationManager {
         
         let triggerTime = UNTimeIntervalNotificationTrigger(timeInterval: 5.0, repeats: false)
         
-        var dateComponents = DateComponents()
-        dateComponents.hour = 19
-        dateComponents.minute = 32
-        dateComponents.day = 3
-        let triggerDate = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+//        var dateComponents = DateComponents()
+//        dateComponents.hour = 19
+//        dateComponents.minute = 32
+//        dateComponents.day = 3
+//        let triggerDate = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
         
         /*
          info.plist needs following:
          <key>NSLocationWhenInUseUsageDescription</key>
          <string>This app needs access to your location to trigger notifications</string>
          */
-        let locationTrigger = UNLocationNotificationTrigger(
-            region: CLCircularRegion(
-                center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194),
-                radius: 100,
-                identifier: "San Francisco"
-            ),
-            repeats: true
-        )
+//        let locationTrigger = UNLocationNotificationTrigger(
+//            region: CLCircularRegion(
+//                center: CLLocationCoordinate2D(latitude: 37.7749, longitude: -122.4194),
+//                radius: 100,
+//                identifier: "San Francisco"
+//            ),
+//            repeats: true
+//        )
         
         let requestTime = UNNotificationRequest(
             identifier: UUID().uuidString,
