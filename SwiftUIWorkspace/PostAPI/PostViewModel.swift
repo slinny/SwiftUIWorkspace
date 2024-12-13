@@ -24,12 +24,12 @@ class PostViewModel: ObservableObject {
         do {
             if let data = try await apiManager.fetchData() {
                 let posts = try await jsonParser.decodePosts(data: data)
-                DispatchQueue.main.async {
+                await MainActor.run {
                     self.posts = posts
                 }
             }
         } catch {
-            DispatchQueue.main.async {
+            await MainActor.run {
                 self.errorMessage = "Failed to fetch or decode posts: \(error)"
             }
         }
@@ -39,12 +39,12 @@ class PostViewModel: ObservableObject {
         do {
             if let data = try await apiManager.fetchPost(by: id) {
                 let post = try await jsonParser.decodePost(data: data)
-                DispatchQueue.main.async {
+                await MainActor.run {
                     self.post = post
                 }
             }
         } catch {
-            DispatchQueue.main.async {
+            await MainActor.run {
                 self.errorMessage = "Failed to fetch or decode post: \(error)"
             }
         }
@@ -56,7 +56,7 @@ class PostViewModel: ObservableObject {
             try await apiManager.postData(data: data)
             await fetchPosts()
         } catch {
-            DispatchQueue.main.async {
+            await MainActor.run {
                 self.errorMessage = "Failed to create post: \(error)"
             }
         }
@@ -68,7 +68,7 @@ class PostViewModel: ObservableObject {
             try await apiManager.updatePost(id: post.id, data: data)
             await fetchPosts()
         } catch {
-            DispatchQueue.main.async {
+            await MainActor.run {
                 self.errorMessage = "Failed to update post: \(error)"
             }
         }
@@ -79,7 +79,7 @@ class PostViewModel: ObservableObject {
             try await apiManager.deletePost(id: id)
             await fetchPosts()
         } catch {
-            DispatchQueue.main.async {
+            await MainActor.run {
                 self.errorMessage = "Failed to delete post: \(error)"
             }
         }
