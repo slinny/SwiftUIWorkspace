@@ -12,6 +12,12 @@
 		930547EC2D093229009388C1 /* PickNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930547EB2D093229009388C1 /* PickNameView.swift */; };
 		931020432C3EDDF900710E55 /* PropertyExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931020422C3EDDF900710E55 /* PropertyExample.swift */; };
 		931020462C3EE30D00710E55 /* InitializerExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 931020452C3EE30D00710E55 /* InitializerExample.swift */; };
+		9311D4A72D0BF77C00FAF846 /* Scoreboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311D4A62D0BF77C00FAF846 /* Scoreboard.swift */; };
+		9311D4A92D0BF82700FAF846 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311D4A82D0BF82700FAF846 /* Player.swift */; };
+		9311D4AB2D0BF84E00FAF846 /* ScoreboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311D4AA2D0BF84E00FAF846 /* ScoreboardView.swift */; };
+		9311D4AD2D0BF90700FAF846 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311D4AC2D0BF90700FAF846 /* GameState.swift */; };
+		9311D4B02D0BFE3600FAF846 /* ScoreKeeperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311D4AF2D0BFE3600FAF846 /* ScoreKeeperTests.swift */; };
+		9311D4B22D0BFECF00FAF846 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9311D4B12D0BFECF00FAF846 /* SettingView.swift */; };
 		932EE2272C4C1A50007B73B8 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 932EE2262C4C1A50007B73B8 /* Common.swift */; };
 		933366E62C45C8E600EAC4B8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E52C45C8E600EAC4B8 /* UserDefaultsManager.swift */; };
 		933366E92C45CA4B00EAC4B8 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E82C45CA4B00EAC4B8 /* CoreData.swift */; };
@@ -81,6 +87,12 @@
 		930547EB2D093229009388C1 /* PickNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickNameView.swift; sourceTree = "<group>"; };
 		931020422C3EDDF900710E55 /* PropertyExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyExample.swift; sourceTree = "<group>"; };
 		931020452C3EE30D00710E55 /* InitializerExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitializerExample.swift; sourceTree = "<group>"; };
+		9311D4A62D0BF77C00FAF846 /* Scoreboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scoreboard.swift; sourceTree = "<group>"; };
+		9311D4A82D0BF82700FAF846 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		9311D4AA2D0BF84E00FAF846 /* ScoreboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreboardView.swift; sourceTree = "<group>"; };
+		9311D4AC2D0BF90700FAF846 /* GameState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		9311D4AF2D0BFE3600FAF846 /* ScoreKeeperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreKeeperTests.swift; sourceTree = "<group>"; };
+		9311D4B12D0BFECF00FAF846 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
 		932EE2262C4C1A50007B73B8 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 		933366E52C45C8E600EAC4B8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		933366E82C45CA4B00EAC4B8 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
@@ -177,6 +189,26 @@
 				931020452C3EE30D00710E55 /* InitializerExample.swift */,
 			);
 			path = Concepts;
+			sourceTree = "<group>";
+		};
+		9311D4A52D0BF75600FAF846 /* ScoreKeeper */ = {
+			isa = PBXGroup;
+			children = (
+				9311D4A62D0BF77C00FAF846 /* Scoreboard.swift */,
+				9311D4A82D0BF82700FAF846 /* Player.swift */,
+				9311D4AA2D0BF84E00FAF846 /* ScoreboardView.swift */,
+				9311D4AC2D0BF90700FAF846 /* GameState.swift */,
+				9311D4B12D0BFECF00FAF846 /* SettingView.swift */,
+			);
+			path = ScoreKeeper;
+			sourceTree = "<group>";
+		};
+		9311D4AE2D0BFE1200FAF846 /* ScoreKeeperTests */ = {
+			isa = PBXGroup;
+			children = (
+				9311D4AF2D0BFE3600FAF846 /* ScoreKeeperTests.swift */,
+			);
+			path = ScoreKeeperTests;
 			sourceTree = "<group>";
 		};
 		933366E42C45C89900EAC4B8 /* UserDefaults */ = {
@@ -316,6 +348,7 @@
 		9399EF952C4AC65800408D40 /* SwiftUIWorkspaceTests */ = {
 			isa = PBXGroup;
 			children = (
+				9311D4AE2D0BFE1200FAF846 /* ScoreKeeperTests */,
 				9399EF962C4AC65800408D40 /* PostsAPIManagerTests.swift */,
 				9399EF9D2C4AC6B300408D40 /* MockURLSession.swift */,
 			);
@@ -423,6 +456,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				9311D4A52D0BF75600FAF846 /* ScoreKeeper */,
 				933D73F92D09CBED00F6B303 /* MetaCGRectContains */,
 				930547EA2D093211009388C1 /* PickName */,
 				9368E1242D07F133006B7AD0 /* PushNotification */,
@@ -566,6 +600,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9311D4B02D0BFE3600FAF846 /* ScoreKeeperTests.swift in Sources */,
 				9399EF9E2C4AC6B300408D40 /* MockURLSession.swift in Sources */,
 				9399EF972C4AC65800408D40 /* PostsAPIManagerTests.swift in Sources */,
 			);
@@ -584,6 +619,7 @@
 				937C67532C3C72A70046A5F2 /* DubizzleLoginView.swift in Sources */,
 				93987CE22C480CA5005ECAB8 /* KeychainUserInfoView.swift in Sources */,
 				939363722C3DC35200FEAD28 /* DubizzleUserInfoView.swift in Sources */,
+				9311D4AB2D0BF84E00FAF846 /* ScoreboardView.swift in Sources */,
 				93D4D5CA2C3301C8004CE68D /* LoginView.swift in Sources */,
 				937C67482C3C3E3B0046A5F2 /* MusicListView.swift in Sources */,
 				939363642C3D817100FEAD28 /* NewsAPIManager.swift in Sources */,
@@ -595,7 +631,9 @@
 				93C2E9CD2C3458900054D23C /* AlertView.swift in Sources */,
 				9393636E2C3DC0A000FEAD28 /* DubizzleRegisterView.swift in Sources */,
 				93F0C4172C2DF258009907D0 /* ContentView.swift in Sources */,
+				9311D4AD2D0BF90700FAF846 /* GameState.swift in Sources */,
 				937C674D2C3C45070046A5F2 /* DubizzleHomeTabView.swift in Sources */,
+				9311D4A72D0BF77C00FAF846 /* Scoreboard.swift in Sources */,
 				93926F442C2F6C7300DB3D4E /* ItemTableView.swift in Sources */,
 				9393636A2C3D81C700FEAD28 /* NewsConstants.swift in Sources */,
 				93ABDFA32C3E147800C38B7C /* KeychainHelper.swift in Sources */,
@@ -620,12 +658,14 @@
 				9389909B2C3D0CCF00DC2356 /* Extensions.swift in Sources */,
 				93E188802C34CA92001E4137 /* SegmentView.swift in Sources */,
 				93F14DE22C4178360006C692 /* NSOperationQueue.swift in Sources */,
+				9311D4B22D0BFECF00FAF846 /* SettingView.swift in Sources */,
 				938990952C3D031F00DC2356 /* APIManager.swift in Sources */,
 				93C2E9D72C3468240054D23C /* WebView.swift in Sources */,
 				930547EC2D093229009388C1 /* PickNameView.swift in Sources */,
 				9399EF892C49E37900408D40 /* PostViewModel.swift in Sources */,
 				937C674B2C3C44BA0046A5F2 /* DubizzleHomeView.swift in Sources */,
 				93F14DE02C41771C0006C692 /* DispatchQueue.swift in Sources */,
+				9311D4A92D0BF82700FAF846 /* Player.swift in Sources */,
 				9399EF852C49DDDB00408D40 /* AddPostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
