@@ -25,6 +25,7 @@
 		934A9E672C35C542004F3581 /* ItunesHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E662C35C542004F3581 /* ItunesHomeView.swift */; };
 		934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E682C35C585004F3581 /* ItunesViewModel.swift */; };
 		9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */; };
+		936FDE3E2D30CB6A0061DB02 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936FDE3D2D30CB6A0061DB02 /* SearchView.swift */; };
 		937C67482C3C3E3B0046A5F2 /* MusicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C67472C3C3E3B0046A5F2 /* MusicListView.swift */; };
 		937C674B2C3C44BA0046A5F2 /* DubizzleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C674A2C3C44BA0046A5F2 /* DubizzleHomeView.swift */; };
 		937C674D2C3C45070046A5F2 /* DubizzleHomeTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C674C2C3C45070046A5F2 /* DubizzleHomeTabView.swift */; };
@@ -103,6 +104,7 @@
 		934A9E662C35C542004F3581 /* ItunesHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesHomeView.swift; sourceTree = "<group>"; };
 		934A9E682C35C585004F3581 /* ItunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesViewModel.swift; sourceTree = "<group>"; };
 		9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
+		936FDE3D2D30CB6A0061DB02 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		937C67472C3C3E3B0046A5F2 /* MusicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListView.swift; sourceTree = "<group>"; };
 		937C674A2C3C44BA0046A5F2 /* DubizzleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleHomeView.swift; sourceTree = "<group>"; };
 		937C674C2C3C45070046A5F2 /* DubizzleHomeTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleHomeTabView.swift; sourceTree = "<group>"; };
@@ -284,6 +286,14 @@
 				9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */,
 			);
 			path = PushNotification;
+			sourceTree = "<group>";
+		};
+		936FDE3A2D30CB2E0061DB02 /* Meta */ = {
+			isa = PBXGroup;
+			children = (
+				936FDE3D2D30CB6A0061DB02 /* SearchView.swift */,
+			);
+			path = Meta;
 			sourceTree = "<group>";
 		};
 		937C67462C3C3D960046A5F2 /* Music */ = {
@@ -472,6 +482,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				936FDE3A2D30CB2E0061DB02 /* Meta */,
 				9391FA342D1730220022701A /* ToDo */,
 				9311D4A52D0BF75600FAF846 /* ScoreKeeper */,
 				933D73F92D09CBED00F6B303 /* MetaCGRectContains */,
@@ -644,6 +655,7 @@
 				9399EFA02C4AC81600408D40 /* URLSessionProtocol.swift in Sources */,
 				932EE2272C4C1A50007B73B8 /* Common.swift in Sources */,
 				9399EF8B2C49E45500408D40 /* PostAPIManager.swift in Sources */,
+				936FDE3E2D30CB6A0061DB02 /* SearchView.swift in Sources */,
 				93C2E9D52C345AEE0054D23C /* WebHomeView.swift in Sources */,
 				93D4D5CD2C331804004CE68D /* TextFieldListView.swift in Sources */,
 				93C2E9CD2C3458900054D23C /* AlertView.swift in Sources */,
