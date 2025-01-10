@@ -14,21 +14,20 @@ struct SearchResult: Identifiable {
 }
 
 class ServerConnection {
-    func autocompleteForSearchText(_ searchText: String?, completion: @escaping ([SearchResult]) -> Void) {
-        guard let query = searchText, !query.isEmpty else {
-            completion([])
-            return
+    func autocompleteForSearchText(_ searchText: String) async throws -> [SearchResult] {
+        guard !searchText.isEmpty else {
+            return []
         }
         
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
-            let sampleResults = [
-                SearchResult(id: UUID(), title: "\(query) Apple", description: "Description for Apple"),
-                SearchResult(id: UUID(), title: "\(query) Banana", description: "Description for Banana"),
-                SearchResult(id: UUID(), title: "\(query) Cherry", description: "Description for Cherry")
-            ]
-            
-            completion(sampleResults)
-        }
+        try await Task.sleep(nanoseconds: 1_000_000_000)
+        
+        let sampleResults = [
+            SearchResult(id: UUID(), title: "\(searchText) Apple", description: "Description for Apple"),
+            SearchResult(id: UUID(), title: "\(searchText) Banana", description: "Description for Banana"),
+            SearchResult(id: UUID(), title: "\(searchText) Cherry", description: "Description for Cherry")
+        ]
+        
+        return sampleResults
     }
 }
 
@@ -49,8 +48,15 @@ struct SearchView: View {
                 .onChange(of: searchText, { oldValue, newValue in
                     searchDebounceTimer?.invalidate()
                     searchDebounceTimer = Timer.scheduledTimer(withTimeInterval: 0.25, repeats: false) { _ in
-                        serverConnection.autocompleteForSearchText(newValue) { resultContents in
-                            self.resultContents = resultContents
+                        Task {
+                            do {
+                                let results = try await serverConnection.autocompleteForSearchText(newValue)
+                                await MainActor.run {
+                                    self.resultContents = results
+                                }
+                            } catch {
+                                print("Error: \(error)")
+                            }
                         }
                     }
                 })
