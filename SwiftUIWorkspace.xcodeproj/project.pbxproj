@@ -26,6 +26,10 @@
 		934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E682C35C585004F3581 /* ItunesViewModel.swift */; };
 		9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */; };
 		936B41382D4B542300C6F301 /* NFCView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B41372D4B542300C6F301 /* NFCView.swift */; };
+		936B413B2D4BE30600C6F301 /* GraphQLAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B413A2D4BE30600C6F301 /* GraphQLAPIManager.swift */; };
+		936B413D2D4BE36800C6F301 /* GraphQLUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B413C2D4BE36800C6F301 /* GraphQLUser.swift */; };
+		936B413F2D4BE39400C6F301 /* GraphQLUserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B413E2D4BE39400C6F301 /* GraphQLUserViewModel.swift */; };
+		936B41412D4BE61600C6F301 /* GraphQLUserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936B41402D4BE61600C6F301 /* GraphQLUserListView.swift */; };
 		936FDE3E2D30CB6A0061DB02 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 936FDE3D2D30CB6A0061DB02 /* SearchView.swift */; };
 		937C67482C3C3E3B0046A5F2 /* MusicListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C67472C3C3E3B0046A5F2 /* MusicListView.swift */; };
 		937C674B2C3C44BA0046A5F2 /* DubizzleHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 937C674A2C3C44BA0046A5F2 /* DubizzleHomeView.swift */; };
@@ -109,6 +113,10 @@
 		934A9E682C35C585004F3581 /* ItunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesViewModel.swift; sourceTree = "<group>"; };
 		9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
 		936B41372D4B542300C6F301 /* NFCView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCView.swift; sourceTree = "<group>"; };
+		936B413A2D4BE30600C6F301 /* GraphQLAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLAPIManager.swift; sourceTree = "<group>"; };
+		936B413C2D4BE36800C6F301 /* GraphQLUser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLUser.swift; sourceTree = "<group>"; };
+		936B413E2D4BE39400C6F301 /* GraphQLUserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLUserViewModel.swift; sourceTree = "<group>"; };
+		936B41402D4BE61600C6F301 /* GraphQLUserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphQLUserListView.swift; sourceTree = "<group>"; };
 		936FDE3D2D30CB6A0061DB02 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
 		937C67472C3C3E3B0046A5F2 /* MusicListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListView.swift; sourceTree = "<group>"; };
 		937C674A2C3C44BA0046A5F2 /* DubizzleHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DubizzleHomeView.swift; sourceTree = "<group>"; };
@@ -307,6 +315,17 @@
 			path = NFC;
 			sourceTree = "<group>";
 		};
+		936B41392D4BE2DA00C6F301 /* GraphQLDecodeOnly */ = {
+			isa = PBXGroup;
+			children = (
+				936B413A2D4BE30600C6F301 /* GraphQLAPIManager.swift */,
+				936B413C2D4BE36800C6F301 /* GraphQLUser.swift */,
+				936B413E2D4BE39400C6F301 /* GraphQLUserViewModel.swift */,
+				936B41402D4BE61600C6F301 /* GraphQLUserListView.swift */,
+			);
+			path = GraphQLDecodeOnly;
+			sourceTree = "<group>";
+		};
 		936FDE3A2D30CB2E0061DB02 /* Meta */ = {
 			isa = PBXGroup;
 			children = (
@@ -501,6 +520,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				936B41392D4BE2DA00C6F301 /* GraphQLDecodeOnly */,
 				936B41362D4B540D00C6F301 /* NFC */,
 				936FDE3A2D30CB2E0061DB02 /* Meta */,
 				9391FA342D1730220022701A /* ToDo */,
@@ -658,6 +678,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				936B413F2D4BE39400C6F301 /* GraphQLUserViewModel.swift in Sources */,
 				939363682C3D81B500FEAD28 /* NewsModel.swift in Sources */,
 				933366E92C45CA4B00EAC4B8 /* CoreData.swift in Sources */,
 				9399EF872C49E0D100408D40 /* PostsListView.swift in Sources */,
@@ -674,6 +695,7 @@
 				937C67482C3C3E3B0046A5F2 /* MusicListView.swift in Sources */,
 				939363642C3D817100FEAD28 /* NewsAPIManager.swift in Sources */,
 				9399EFA02C4AC81600408D40 /* URLSessionProtocol.swift in Sources */,
+				936B413D2D4BE36800C6F301 /* GraphQLUser.swift in Sources */,
 				932EE2272C4C1A50007B73B8 /* Common.swift in Sources */,
 				9399EF8B2C49E45500408D40 /* PostAPIManager.swift in Sources */,
 				936FDE3E2D30CB6A0061DB02 /* SearchView.swift in Sources */,
@@ -712,6 +734,7 @@
 				933D73FB2D09CC1F00F6B303 /* CGRectContainsView.swift in Sources */,
 				9389909B2C3D0CCF00DC2356 /* Extensions.swift in Sources */,
 				93E188802C34CA92001E4137 /* SegmentView.swift in Sources */,
+				936B41412D4BE61600C6F301 /* GraphQLUserListView.swift in Sources */,
 				93F14DE22C4178360006C692 /* NSOperationQueue.swift in Sources */,
 				9311D4B22D0BFECF00FAF846 /* SettingView.swift in Sources */,
 				938990952C3D031F00DC2356 /* APIManager.swift in Sources */,
@@ -720,6 +743,7 @@
 				9399EF892C49E37900408D40 /* PostViewModel.swift in Sources */,
 				937C674B2C3C44BA0046A5F2 /* DubizzleHomeView.swift in Sources */,
 				93F14DE02C41771C0006C692 /* DispatchQueue.swift in Sources */,
+				936B413B2D4BE30600C6F301 /* GraphQLAPIManager.swift in Sources */,
 				9311D4A92D0BF82700FAF846 /* Player.swift in Sources */,
 				9391FA362D17303A0022701A /* ToDoListView.swift in Sources */,
 				9399EF852C49DDDB00408D40 /* AddPostView.swift in Sources */,
