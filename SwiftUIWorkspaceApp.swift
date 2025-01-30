@@ -11,8 +11,10 @@ import SwiftData
 @main
 struct SwiftUIWorkspaceApp: App {
     
-    let modelContainer: ModelContainer
+    let modelContainer: ModelContainer // SwiftData
+    let persistenceController = PersistenceController.shared // CoreData
     
+    // SwiftData
     init() {
         do {
             modelContainer = try ModelContainer(for: ToDoItem.self)
@@ -24,7 +26,8 @@ struct SwiftUIWorkspaceApp: App {
     var body: some Scene {
         WindowGroup {
             ToDoListView()
-                .modelContainer(for: ToDoItem.self)
+                .modelContainer(for: ToDoItem.self) // SwiftData
+                .environment(\.managedObjectContext, persistenceController.container.viewContext) // CoreData
         }
     }
 }
