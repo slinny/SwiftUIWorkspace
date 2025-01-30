@@ -41,16 +41,10 @@ class GraphQLAPIManager {
             
             do {
                 let decodedResponse = try JSONDecoder().decode(GraphQLResponse<T>.self, from: data)
-                completion(.success(decodedResponse.data))
+                completion(.success(decodedResponse.data!))
             } catch {
                 completion(.failure(error))
             }
         }.resume()
     }
 }
-
-// GraphQL Response Wrapper
-struct GraphQLResponse<T: Decodable>: Decodable {
-    let data: T
-}
-
