@@ -69,6 +69,7 @@
 		9399EF972C4AC65800408D40 /* PostsAPIManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399EF962C4AC65800408D40 /* PostsAPIManagerTests.swift */; };
 		9399EF9E2C4AC6B300408D40 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399EF9D2C4AC6B300408D40 /* MockURLSession.swift */; };
 		9399EFA02C4AC81600408D40 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399EF9F2C4AC81600408D40 /* URLSessionProtocol.swift */; };
+		93A77BF52D4E9A1400B60675 /* ToggleStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A77BF42D4E9A1400B60675 /* ToggleStyleView.swift */; };
 		93ABDFA32C3E147800C38B7C /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABDFA22C3E147800C38B7C /* KeychainHelper.swift */; };
 		93C2E9CD2C3458900054D23C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E9CC2C3458900054D23C /* AlertView.swift */; };
 		93C2E9D52C345AEE0054D23C /* WebHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E9D42C345AEE0054D23C /* WebHomeView.swift */; };
@@ -163,6 +164,7 @@
 		9399EF962C4AC65800408D40 /* PostsAPIManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsAPIManagerTests.swift; sourceTree = "<group>"; };
 		9399EF9D2C4AC6B300408D40 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		9399EF9F2C4AC81600408D40 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		93A77BF42D4E9A1400B60675 /* ToggleStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleView.swift; sourceTree = "<group>"; };
 		93ABDFA22C3E147800C38B7C /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		93C2E9CC2C3458900054D23C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		93C2E9D42C345AEE0054D23C /* WebHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHomeView.swift; sourceTree = "<group>"; };
@@ -444,6 +446,14 @@
 			path = SwiftUIWorkspaceTests;
 			sourceTree = "<group>";
 		};
+		93A77BF32D4E9A0100B60675 /* Toggle */ = {
+			isa = PBXGroup;
+			children = (
+				93A77BF42D4E9A1400B60675 /* ToggleStyleView.swift */,
+			);
+			path = Toggle;
+			sourceTree = "<group>";
+		};
 		93ABDFA12C3E144600C38B7C /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -545,6 +555,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				93A77BF32D4E9A0100B60675 /* Toggle */,
 				936B41422D4BEB6500C6F301 /* GraphQL */,
 				936B41392D4BE2DA00C6F301 /* GraphQLDecodeOnly */,
 				936B41362D4B540D00C6F301 /* NFC */,
@@ -747,6 +758,7 @@
 				936B41462D4BEB9B00C6F301 /* GraphQLClient.swift in Sources */,
 				939363622C3D815A00FEAD28 /* NewsViewModel.swift in Sources */,
 				93926F3E2C2F6BC900DB3D4E /* Item.swift in Sources */,
+				93A77BF52D4E9A1400B60675 /* ToggleStyleView.swift in Sources */,
 				931020432C3EDDF900710E55 /* PropertyExample.swift in Sources */,
 				93F0C4152C2DF258009907D0 /* SwiftUIWorkspaceApp.swift in Sources */,
 				939363662C3D81A000FEAD28 /* NewsListView.swift in Sources */,
