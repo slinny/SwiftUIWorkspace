@@ -70,6 +70,7 @@
 		9399EF9E2C4AC6B300408D40 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399EF9D2C4AC6B300408D40 /* MockURLSession.swift */; };
 		9399EFA02C4AC81600408D40 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9399EF9F2C4AC81600408D40 /* URLSessionProtocol.swift */; };
 		93A77BF52D4E9A1400B60675 /* ToggleStyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A77BF42D4E9A1400B60675 /* ToggleStyleView.swift */; };
+		93A77BF82D4E9AEB00B60675 /* TransitionAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A77BF72D4E9AEB00B60675 /* TransitionAnimationView.swift */; };
 		93ABDFA32C3E147800C38B7C /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABDFA22C3E147800C38B7C /* KeychainHelper.swift */; };
 		93C2E9CD2C3458900054D23C /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E9CC2C3458900054D23C /* AlertView.swift */; };
 		93C2E9D52C345AEE0054D23C /* WebHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93C2E9D42C345AEE0054D23C /* WebHomeView.swift */; };
@@ -165,6 +166,7 @@
 		9399EF9D2C4AC6B300408D40 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		9399EF9F2C4AC81600408D40 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
 		93A77BF42D4E9A1400B60675 /* ToggleStyleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleView.swift; sourceTree = "<group>"; };
+		93A77BF72D4E9AEB00B60675 /* TransitionAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionAnimationView.swift; sourceTree = "<group>"; };
 		93ABDFA22C3E147800C38B7C /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		93C2E9CC2C3458900054D23C /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		93C2E9D42C345AEE0054D23C /* WebHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebHomeView.swift; sourceTree = "<group>"; };
@@ -454,6 +456,14 @@
 			path = Toggle;
 			sourceTree = "<group>";
 		};
+		93A77BF62D4E9ACE00B60675 /* TransitionAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				93A77BF72D4E9AEB00B60675 /* TransitionAnimationView.swift */,
+			);
+			path = TransitionAnimation;
+			sourceTree = "<group>";
+		};
 		93ABDFA12C3E144600C38B7C /* Keychain */ = {
 			isa = PBXGroup;
 			children = (
@@ -555,6 +565,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				93A77BF62D4E9ACE00B60675 /* TransitionAnimation */,
 				93A77BF32D4E9A0100B60675 /* Toggle */,
 				936B41422D4BEB6500C6F301 /* GraphQL */,
 				936B41392D4BE2DA00C6F301 /* GraphQLDecodeOnly */,
@@ -774,6 +785,7 @@
 				93042C642C3626B100DECA12 /* Artists.swift in Sources */,
 				93926F422C2F6C2900DB3D4E /* ItemViewModel.swift in Sources */,
 				934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */,
+				93A77BF82D4E9AEB00B60675 /* TransitionAnimationView.swift in Sources */,
 				933D73FB2D09CC1F00F6B303 /* CGRectContainsView.swift in Sources */,
 				9389909B2C3D0CCF00DC2356 /* Extensions.swift in Sources */,
 				936B414E2D4BF0C500C6F301 /* GraphQLAddItemView.swift in Sources */,
