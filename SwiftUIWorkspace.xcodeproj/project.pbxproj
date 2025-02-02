@@ -22,6 +22,10 @@
 		933366E62C45C8E600EAC4B8 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E52C45C8E600EAC4B8 /* UserDefaultsManager.swift */; };
 		933366E92C45CA4B00EAC4B8 /* CoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933366E82C45CA4B00EAC4B8 /* CoreData.swift */; };
 		933D73FB2D09CC1F00F6B303 /* CGRectContainsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 933D73FA2D09CC1F00F6B303 /* CGRectContainsView.swift */; };
+		9349B1682D4FE44B00A29F95 /* FoodListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349B1672D4FE44B00A29F95 /* FoodListView.swift */; };
+		9349B16A2D4FE46800A29F95 /* FoodItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349B1692D4FE46800A29F95 /* FoodItem.swift */; };
+		9349B16C2D4FE49300A29F95 /* AddFoodItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349B16B2D4FE49300A29F95 /* AddFoodItemView.swift */; };
+		9349B16E2D4FE4D800A29F95 /* FoodViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9349B16D2D4FE4D800A29F95 /* FoodViewModel.swift */; };
 		934A9E672C35C542004F3581 /* ItunesHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E662C35C542004F3581 /* ItunesHomeView.swift */; };
 		934A9E692C35C585004F3581 /* ItunesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934A9E682C35C585004F3581 /* ItunesViewModel.swift */; };
 		9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */; };
@@ -117,6 +121,10 @@
 		933366E52C45C8E600EAC4B8 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		933366E82C45CA4B00EAC4B8 /* CoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreData.swift; sourceTree = "<group>"; };
 		933D73FA2D09CC1F00F6B303 /* CGRectContainsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRectContainsView.swift; sourceTree = "<group>"; };
+		9349B1672D4FE44B00A29F95 /* FoodListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodListView.swift; sourceTree = "<group>"; };
+		9349B1692D4FE46800A29F95 /* FoodItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodItem.swift; sourceTree = "<group>"; };
+		9349B16B2D4FE49300A29F95 /* AddFoodItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFoodItemView.swift; sourceTree = "<group>"; };
+		9349B16D2D4FE4D800A29F95 /* FoodViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodViewModel.swift; sourceTree = "<group>"; };
 		934A9E662C35C542004F3581 /* ItunesHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesHomeView.swift; sourceTree = "<group>"; };
 		934A9E682C35C585004F3581 /* ItunesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItunesViewModel.swift; sourceTree = "<group>"; };
 		9368E1252D07F15E006B7AD0 /* PushNotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationView.swift; sourceTree = "<group>"; };
@@ -276,6 +284,17 @@
 				933D73FA2D09CC1F00F6B303 /* CGRectContainsView.swift */,
 			);
 			path = MetaCGRectContains;
+			sourceTree = "<group>";
+		};
+		9349B1662D4FE41C00A29F95 /* FoodTracker */ = {
+			isa = PBXGroup;
+			children = (
+				9349B1672D4FE44B00A29F95 /* FoodListView.swift */,
+				9349B1692D4FE46800A29F95 /* FoodItem.swift */,
+				9349B16B2D4FE49300A29F95 /* AddFoodItemView.swift */,
+				9349B16D2D4FE4D800A29F95 /* FoodViewModel.swift */,
+			);
+			path = FoodTracker;
 			sourceTree = "<group>";
 		};
 		934A9E612C35C4F4004F3581 /* Combine */ = {
@@ -565,6 +584,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				9349B1662D4FE41C00A29F95 /* FoodTracker */,
 				93A77BF62D4E9ACE00B60675 /* TransitionAnimation */,
 				93A77BF32D4E9A0100B60675 /* Toggle */,
 				936B41422D4BEB6500C6F301 /* GraphQL */,
@@ -767,13 +787,16 @@
 				93ABDFA32C3E147800C38B7C /* KeychainHelper.swift in Sources */,
 				93042C5C2C3623B400DECA12 /* Constants.swift in Sources */,
 				936B41462D4BEB9B00C6F301 /* GraphQLClient.swift in Sources */,
+				9349B16E2D4FE4D800A29F95 /* FoodViewModel.swift in Sources */,
 				939363622C3D815A00FEAD28 /* NewsViewModel.swift in Sources */,
+				9349B16A2D4FE46800A29F95 /* FoodItem.swift in Sources */,
 				93926F3E2C2F6BC900DB3D4E /* Item.swift in Sources */,
 				93A77BF52D4E9A1400B60675 /* ToggleStyleView.swift in Sources */,
 				931020432C3EDDF900710E55 /* PropertyExample.swift in Sources */,
 				93F0C4152C2DF258009907D0 /* SwiftUIWorkspaceApp.swift in Sources */,
 				939363662C3D81A000FEAD28 /* NewsListView.swift in Sources */,
 				933366E62C45C8E600EAC4B8 /* UserDefaultsManager.swift in Sources */,
+				9349B1682D4FE44B00A29F95 /* FoodListView.swift in Sources */,
 				9368E1262D07F15E006B7AD0 /* PushNotificationView.swift in Sources */,
 				93987CE02C480C5B005ECAB8 /* KeychainLoginView.swift in Sources */,
 				9399EF8D2C49E46300408D40 /* PostJsonParser.swift in Sources */,
@@ -799,6 +822,7 @@
 				9399EF892C49E37900408D40 /* PostViewModel.swift in Sources */,
 				937C674B2C3C44BA0046A5F2 /* DubizzleHomeView.swift in Sources */,
 				93F14DE02C41771C0006C692 /* DispatchQueue.swift in Sources */,
+				9349B16C2D4FE49300A29F95 /* AddFoodItemView.swift in Sources */,
 				936B413B2D4BE30600C6F301 /* GraphQLAPIManager.swift in Sources */,
 				9311D4A92D0BF82700FAF846 /* Player.swift in Sources */,
 				9391FA362D17303A0022701A /* ToDoListView.swift in Sources */,

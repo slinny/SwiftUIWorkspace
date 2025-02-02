@@ -25,9 +25,10 @@ struct SwiftUIWorkspaceApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ToDoListView()
-                .modelContainer(for: ToDoItem.self) // SwiftData
-                .environment(\.managedObjectContext, persistenceController.container.viewContext) // CoreData
+//            ToDoListView()
+//                .modelContainer(for: ToDoItem.self) // SwiftData
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext) // CoreData
+            FoodListView()
         }
     }
 }
