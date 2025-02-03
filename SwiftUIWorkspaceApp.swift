@@ -28,7 +28,8 @@ struct SwiftUIWorkspaceApp: App {
 //            ToDoListView()
 //                .modelContainer(for: ToDoItem.self) // SwiftData
 //                .environment(\.managedObjectContext, persistenceController.container.viewContext) // CoreData
-            FoodListView()
+//            FoodListView()
+            BioAuthView()
         }
     }
 }

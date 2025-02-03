@@ -84,6 +84,7 @@
 		93C529812D3D8EEF00653EF6 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 93C5297F2D3D8EEF00653EF6 /* Model.xcdatamodeld */; };
 		93D4D5CA2C3301C8004CE68D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D5C92C3301C8004CE68D /* LoginView.swift */; };
 		93D4D5CD2C331804004CE68D /* TextFieldListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D4D5CC2C331804004CE68D /* TextFieldListView.swift */; };
+		93D69B2B2D513CF40055A97F /* BioAuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D69B2A2D513CF40055A97F /* BioAuthView.swift */; };
 		93E188802C34CA92001E4137 /* SegmentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E1887F2C34CA92001E4137 /* SegmentView.swift */; };
 		93E188872C34D7D9001E4137 /* AsyncImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E188862C34D7D9001E4137 /* AsyncImageView.swift */; };
 		93EA68B92C34433E00D53BEE /* SelectListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93EA68B82C34433E00D53BEE /* SelectListView.swift */; };
@@ -184,6 +185,7 @@
 		93C529802D3D8EEF00653EF6 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		93D4D5C92C3301C8004CE68D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		93D4D5CC2C331804004CE68D /* TextFieldListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldListView.swift; sourceTree = "<group>"; };
+		93D69B2A2D513CF40055A97F /* BioAuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioAuthView.swift; sourceTree = "<group>"; };
 		93E1887F2C34CA92001E4137 /* SegmentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentView.swift; sourceTree = "<group>"; };
 		93E188862C34D7D9001E4137 /* AsyncImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncImageView.swift; sourceTree = "<group>"; };
 		93EA68B82C34433E00D53BEE /* SelectListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectListView.swift; sourceTree = "<group>"; };
@@ -536,6 +538,14 @@
 			path = TextFieldList;
 			sourceTree = "<group>";
 		};
+		93D69B292D513C490055A97F /* BioAuth */ = {
+			isa = PBXGroup;
+			children = (
+				93D69B2A2D513CF40055A97F /* BioAuthView.swift */,
+			);
+			path = BioAuth;
+			sourceTree = "<group>";
+		};
 		93E1887C2C34CA5C001E4137 /* Segment */ = {
 			isa = PBXGroup;
 			children = (
@@ -584,6 +594,7 @@
 		93F0C4132C2DF258009907D0 /* SwiftUIWorkspace */ = {
 			isa = PBXGroup;
 			children = (
+				93D69B292D513C490055A97F /* BioAuth */,
 				9349B1662D4FE41C00A29F95 /* FoodTracker */,
 				93A77BF62D4E9ACE00B60675 /* TransitionAnimation */,
 				93A77BF32D4E9A0100B60675 /* Toggle */,
@@ -785,6 +796,7 @@
 				9393636A2C3D81C700FEAD28 /* NewsConstants.swift in Sources */,
 				936B414A2D4BEC2200C6F301 /* GraphQLItemsView.swift in Sources */,
 				93ABDFA32C3E147800C38B7C /* KeychainHelper.swift in Sources */,
+				93D69B2B2D513CF40055A97F /* BioAuthView.swift in Sources */,
 				93042C5C2C3623B400DECA12 /* Constants.swift in Sources */,
 				936B41462D4BEB9B00C6F301 /* GraphQLClient.swift in Sources */,
 				9349B16E2D4FE4D800A29F95 /* FoodViewModel.swift in Sources */,
@@ -1007,6 +1019,7 @@
 				DEVELOPMENT_TEAM = PRAK7FCXFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = Enable;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1036,6 +1049,7 @@
 				DEVELOPMENT_TEAM = PRAK7FCXFF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = Enable;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
